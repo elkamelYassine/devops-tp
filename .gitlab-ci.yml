@@ -4,6 +4,7 @@ stages:
 
 test-job:
   stage: test
+  image: python:3.9  # Use a Python image
   script:
     - echo "Running tests..."
     - python -m unittest discover -s hello-devops
